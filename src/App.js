@@ -25,7 +25,6 @@ const checkDomain =
     const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_vBuztugI9osZiTOvQwCZsdsXaZUi8&ipAddress=8.8.8.8`)
     const data = await res.json()
     setAddress(data)
-    console.log("address:::",address)
   }
   getApiData()
  }

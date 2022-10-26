@@ -5,11 +5,14 @@ import icon from "./icon"
 
 export default function Markerposition({address}) {
     const map= useMap()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
      const position = [address.location.lat,address.location.lng]
+   
   useEffect(() => {
     map.flyTo(position,13,{
       animate:true
     })
+    
   },[map,position])
 //   const position = [51.505, -0.09]
 // const redOptions = { color: 'red' }
